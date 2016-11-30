@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "A javascript boilerplait setup",
   "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel security-check open:src",
+    "security-check": "nsp check",
+    "open:src": "node buildScripts/srcServer.js",
+    "localtunnel": "lt --port 3000 --subdomain javascriptsetup",
+    "share": "npm-run-all --parallel localtunnel open:src"
   },
   "author": "Johannes Holger Greve",
   "license": "MIT",
