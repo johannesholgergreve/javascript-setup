@@ -1,6 +1,10 @@
-var express = require('express'),
-    path = require('path'),
-    open = require('open');
+// var express = require('express'),
+//     path = require('path'),
+//     open = require('open');
+
+import express from 'express';
+import path from 'path';
+import open from 'open';
 
 
 var port = 3000;
